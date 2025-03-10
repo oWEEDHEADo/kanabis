@@ -1,0 +1,28 @@
+* {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.thing {
+    text-shadow: 5px 5px 8px #e063eb;
+    color: #ffffff;
+    margin: 50vh 5vw 8vh 5vw;
+}
+
+body{
+    height: 100%;
+    background-image: url(image/81677347_p0.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    min-width: 100%;
+}
+
+.thing h1{
+    font-size: 100px;
+}
+
+.thing i{
+    font-size: 35px;
+    color: #ffffff;
+    padding-left: 0px;
+}
