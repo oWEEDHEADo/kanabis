@@ -21,8 +21,17 @@ body{
     font-size: 100px;
 }
 
+.thing li{
+    display: inline;
+    padding-left: 10px;
+}
+
 .thing i{
     font-size: 35px;
     color: #ffffff;
     padding-left: 0px;
+}
+
+.imgsize{
+    width: 33px;
 }
