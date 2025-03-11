@@ -14,7 +14,7 @@
 }
 
 body{
-    height: 80%;
+    height: 100%;
     background-image: url(image/damm.jpg);
     background-repeat: no-repeat;
     background-size:100%;
@@ -88,12 +88,17 @@ a {
     }
 
     .thing i{
-        font-size: 27px;
+        font-size: 40px;
     }
 
     .thing li{    
         display: inline;
         padding: 5px;
+    }
+    
+    .imgsize{
+        width: 40px;
+        border-radius:50%;
     }
 
     .thing ul {
