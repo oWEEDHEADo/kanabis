@@ -6,16 +6,16 @@
 }
 
 .thing {
-    margin: 50vh 5vw 8vh 10vw;
+    margin: 49vh 5vw 8vh 50vw;
 }
 
 .thing .ulthing{
-    margin-top:10px;
+    margin-top:7px;
 }
 
 body{
-    height: 100%;
-    background-image: url(image/81677347_p0.jpg);
+    height: 80%;
+    background-image: url(image/damm.jpg);
     background-repeat: no-repeat;
     background-size:100%;
     background-position:top;
@@ -31,7 +31,7 @@ body{
     display: inline;
     padding-left: 10px;
     margin-left: -4px;
-    text-shadow: 5px 5px 8px #e063eb;
+    text-shadow: 5px 5px 8px #e6de6f;
     color: #ffffff;
 }
 
@@ -44,12 +44,64 @@ body{
 
 .imgsize{
     width: 33px;
+    border-radius:50%;
 }
 
 a {
     text-decoration: none;
 }
 
+.thing .strg{
+    color:aliceblue;
+    text-shadow: 5px 5px 7px #e6de6f;
+}
+
 .thing .imgshad{
-    box-shadow:5px 5px 8px #e063eb;
+    box-shadow:5px 5px 8px #e6de6f;
+}
+
+@media (width < 1000px){
+
+    body{
+        background-image:url(image/mobile.png);
+    }
+
+    .thing {
+        position: absolute;
+        top: 22%;
+        bottom: 37%;
+        border: 0px ;
+        left: 0%;
+        right: 0%;
+        transform: translate(-50%);
+        text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.37)
+    }
+    
+    .thing h1{
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        left: 0%;
+        right: 0%;
+        bottom: 0px; 
+        font-size: 80px;
+    }
+
+    .thing i{
+        font-size: 27px;
+    }
+
+    .thing li{    
+        display: inline;
+        padding: 5px;
+    }
+
+    .thing ul {
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        left: 1%;
+        right: 0%;
+        top: -5px;
+    }
 }
