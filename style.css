@@ -40,11 +40,17 @@ body{
     color: #ffffff;
     padding-left: 0px;
     margin-left: 0px;
+    transition: text-shadow 0.2s ease;
+}
+
+.thing i:hover{
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8)
 }
 
 .imgsize{
     width: 33px;
-    border-radius:50%;
+    border-radius:50%; 
+    transition: box-shadow 0.2s ease;
 }
 
 a {
@@ -56,8 +62,12 @@ a {
     text-shadow: 5px 5px 7px #e6de6f;
 }
 
+.thing .imgshad:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8)
+}
+
 .thing .imgshad{
-    box-shadow:5px 5px 8px #e6de6f;
+    box-shadow:5px 5px 8px #e6de6f;   
 }
 
 .feet{
@@ -66,6 +76,36 @@ a {
     right:0%;
     left: 94%;
     width:80px;
+}
+
+.thing .message {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgb(114, 26, 214);
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15vw;
+    display: none;
+}
+
+.thing .discord:hover{
+    text-shadow: 0 0 15px rgb(114, 26, 214);
+}
+
+.thing .discord::after{
+    font-family:Arial, Helvetica, sans-serif;
+    position:absolute;  
+    content: "click to copy id";
+    opacity: 0;
+    visibility: hidden;
+    bottom: 27%;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: -36px;
+}
+
+.thing .discord:hover::after{
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (width < 1000px){
@@ -117,7 +157,14 @@ a {
         right: 0%;
         top: -5px;
     }
-
+    
+    .thing .message {
+        color: rgb(255, 255, 255);
+        font-size: 9px;
+        margin-top: 10px;
+        margin-left: 0vw;
+        display: none;
+}
     .feet{
         position: absolute;
         bottom: 0%;

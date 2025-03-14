@@ -7,6 +7,7 @@
     <link rel="icon" href="image/Cannabis_leaf.png" >
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -40,7 +41,28 @@
                     <i class='bx bxl-steam' ></i>
                 </a>
             </li>
-        </ul>
+            <li>        
+                <input type="text" id="textToCopy" value="weedhead" readonly style="display:none;">
+                <i class='bx bxl-discord-alt discord' onclick="copyText()"></i>     
+                <p id="copyMessage" class="message">id copied</p>            
+            </li>
+        </ul>    
+
+        <script>
+            function copyText() {
+                var text = document.getElementById("textToCopy").value;
+    
+                navigator.clipboard.writeText(text).then(() => {
+                    var message = document.getElementById("copyMessage");
+                    message.style.display = "block";
+    
+                    // 2 秒後隱藏提示訊息
+                    setTimeout(() => { message.style.display = "none"; }, 750);
+                }).catch(err => {
+                    console.error("複製失敗！", err);
+                });
+            }
+        </script>
     </div>
 </body>
 <footer class="feet">
