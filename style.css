@@ -83,7 +83,7 @@ a {
     text-shadow: 0 0 15px #e6de6f;
     font-size: 12px;
     margin-top: 10px;
-    margin-left: 15vw;
+    margin-left: 12vw;
     display: none;
 }
 
@@ -97,7 +97,7 @@ a {
     content: "click to copy id";
     opacity: 0;
     visibility: hidden;
-    bottom: 27%;
+    padding-top:33px;
     font-weight: bold;
     font-size: 12px;
     margin-left: -36px;
